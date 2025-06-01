@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IndoMicro</title>
+
+    <!-- Icon -->
+    <link rel="icon" href="assets/icon.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="dist/output.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="bg-gray-50 space-y-4 lg:space-y-4 xl:space-y-12">
+        <div class="">
+            <header class="absolute inset-x-0 top-0 z-50 fixed">
+                <div class="lg:px-8 bg-white xl:px-52">
+                    <nav class="flex items-center justify-between px-6 py-4" aria-label="Global">
+                        <div class="flex" id="beranda">
+                            <a href="#" class="-m-1.5 p-1.5 flex gap-3 items-center">
+                                <img class="h-8 lg:h-12 w-auto" src="assets/icon.png" alt="IndoMicro Logo">
+                                <span class="text-sky-800 text-lg font-bold font-domine lg:text-2xl">IndoMicro</span>
+                            </a>
+                        </div>
+                        <div class="hidden lg:flex gap-4 items-center">
+                            <button
+                                onclick="handleScroll('beranda', + 20)"
+                                data-target="beranda"
+                                class="tab-button py-1 cursor-pointer text-sm font-semibold">Beranda</button>
+                            <button
+                                onclick="handleScroll('tentang-kami')"
+                                data-target="tentang-kami"
+                                class="tab-button py-1 cursor-pointer text-gray-600 text-sm font-medium hover:text-sky-800">Tentang Kami</button>
+                            <button
+                                onclick="handleScroll('komponen')"
+                                data-target="komponen"
+                                class="tab-button py-1 cursor-pointer text-gray-600 text-sm font-medium hover:text-sky-800">Komponen</button>
+                            <button
+                                onclick="handleScroll('portofolio')"
+                                data-target="portofolio"
+                                class="tab-button py-1 cursor-pointer text-gray-600 text-sm font-medium hover:text-sky-800">Portofolio</button>
+                            <button
+                                onclick="handleScroll('testimoni', 100)"
+                                data-target="testimoni"
+                                class="tab-button py-1 cursor-pointer text-gray-600 text-sm font-medium hover:text-sky-800">Testimoni</button>
+                        </div>
+                        <div class="">
+                            <a href="" class="flex gap-2 items-center bg-sky-800 hover:bg-sky-900 text-white text-sm font-semibold rounded-md px-4 py-2">
+                                <span class="">Hubungi Kami</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M19.05 4.91C18.1331 3.98411 17.0411 3.24997 15.8376 2.75036C14.634 2.25076 13.3431 1.99568 12.04 2C6.58005 2 2.13005 6.45 2.13005 11.91C2.13005 13.66 2.59005 15.36 3.45005 16.86L2.05005 22L7.30005 20.62C8.75005 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.9501 17.38 21.9501 11.92C21.9501 9.27 20.92 6.78 19.05 4.91ZM12.04 20.15C10.56 20.15 9.11005 19.75 7.84005 19L7.54005 18.82L4.42005 19.64L5.25005 16.6L5.05005 16.29C4.2276 14.9771 3.79097 13.4593 3.79005 11.91C3.79005 7.37 7.49005 3.67 12.03 3.67C14.23 3.67 16.3 4.53 17.85 6.09C18.6177 6.85386 19.226 7.76254 19.6397 8.76333C20.0534 9.76411 20.2642 10.8371 20.26 11.92C20.2801 16.46 16.58 20.15 12.04 20.15ZM16.56 13.99C16.31 13.87 15.09 13.27 14.87 13.18C14.64 13.1 14.48 13.06 14.31 13.3C14.14 13.55 13.67 14.11 13.53 14.27C13.39 14.44 13.24 14.46 12.99 14.33C12.74 14.21 11.94 13.94 11 13.1C10.26 12.44 9.77005 11.63 9.62005 11.38C9.48005 11.13 9.60005 11 9.73005 10.87C9.84005 10.76 9.98005 10.58 10.1 10.44C10.22 10.3 10.27 10.19 10.35 10.03C10.43 9.86 10.39 9.72 10.33 9.6C10.27 9.48 9.77005 8.26 9.57005 7.76C9.37005 7.28 9.16005 7.34 9.01005 7.33H8.53005C8.36005 7.33 8.10005 7.39 7.87005 7.64C7.65005 7.89 7.01005 8.49 7.01005 9.71C7.01005 10.93 7.90005 12.11 8.02005 12.27C8.14005 12.44 9.77005 14.94 12.25 16.01C12.84 16.27 13.3 16.42 13.66 16.53C14.25 16.72 14.79 16.69 15.22 16.63C15.7 16.56 16.69 16.03 16.89 15.45C17.1 14.87 17.1 14.38 17.03 14.27C16.96 14.16 16.81 14.11 16.56 13.99Z" fill="white"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+
+            <div class="px-4 pt-28 lg:p-16 lg:pb-0 xl:px-52"
+                 data-aos="fade-up"
+                 data-aos-offset="200"
+                 data-aos-delay="50"
+                 data-aos-duration="750"
+                 data-aos-easing="ease-in-out"
+                 data-aos-mirror="true"
+                 data-aos-once="false"
+                 data-aos-anchor-placement="top-center"
+            >
+                <div class="flex flex-col px-8 gap-8 justify-center lg:flex lg:flex-row lg:justify-between items-center">
+                    <div class="space-y-4 order-last lg:order-first">
+                        <div class="space-y-2">
+                            <h1 class="text-3xl text-center lg:text-left font-semibold font-poppins text-gray-600 ">
+                                Robotika Cerdas, Website Tangguh, <span class="font-salsa font-bold text-sky-800">IndoMicro</span> Solusinya!
+                            </h1>
+
+                            <h2 class="text-base text-center lg:text-left text-gray-600 font-medium">
+                                IndoMicro: Inovasi Tanpa Batas! Gabungkan Kecanggihan Robotika dengan Teknologi Website untuk Solusi Digital Terintegrasi.
+                            </h2>
+                        </div>
+
+                        <div class="space-y-2">
+                            <div class="flex gap-2 items-center justify-center lg:justify-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 17" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.33333 6.50001C3.33356 5.60554 3.59084 4.72999 4.07454 3.9776C4.55824 3.22521 5.24798 2.62767 6.06163 2.25615C6.87528 1.88462 7.77856 1.75475 8.66392 1.88201C9.54928 2.00926 10.3794 2.38828 11.0555 2.97393C11.7316 3.55958 12.2251 4.32718 12.4773 5.18535C12.7295 6.04352 12.7298 6.95609 12.4781 7.8144C12.2264 8.67272 11.7333 9.44062 11.0576 10.0267C10.3819 10.6127 9.55195 10.9922 8.66666 11.12V14.5C8.66666 14.6768 8.59642 14.8464 8.4714 14.9714C8.34637 15.0964 8.17681 15.1667 8 15.1667C7.82318 15.1667 7.65361 15.0964 7.52859 14.9714C7.40357 14.8464 7.33333 14.6768 7.33333 14.5V11.12C6.22246 10.9597 5.20659 10.4043 4.47193 9.5558C3.73727 8.70727 3.33304 7.62238 3.33333 6.50001ZM7.29333 5.79334C7.48068 5.60575 7.73487 5.50024 8 5.50001C8.17681 5.50001 8.34637 5.42977 8.4714 5.30474C8.59642 5.17972 8.66666 5.01015 8.66666 4.83334C8.66666 4.65653 8.59642 4.48696 8.4714 4.36193C8.34637 4.23691 8.17681 4.16667 8 4.16667C7.38116 4.16667 6.78766 4.4125 6.35008 4.85009C5.91249 5.28767 5.66666 5.88117 5.66666 6.50001C5.66666 6.67682 5.7369 6.84639 5.86192 6.97141C5.98695 7.09643 6.15652 7.16667 6.33333 7.16667C6.51014 7.16667 6.67971 7.09643 6.80473 6.97141C6.92976 6.84639 6.99999 6.67682 6.99999 6.50001C6.99999 6.23467 7.10533 5.98001 7.29333 5.79334Z" fill="#075984"/>
+                                </svg>
+
+                                <span class="text-sm font-medium text-gray-600">
+                            Jl. Lunjuk Palembang Sumatera Selatan
+                        </span>
+                            </div>
+
+                            <div class="flex gap-2 items-center justify-center lg:justify-start">
+                                <!-- Phone-->
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 26 27" fill="none">
+                                        <rect x="0.5" y="1" width="25" height="25" rx="12.5" stroke="#9BA2AE"/>
+                                        <path d="M9.25111 12.1544L14.3098 17.1789C14.8519 16.5512 18.2842 12.8716 20 17.8976C20 17.8976 19.8196 20.5 16.1158 20.5C13.497 20.5 10.7872 17.3593 8.89022 15.5642C7.26467 14.0382 6 12.0642 6 10.2691C6 6.59022 8.52933 6.5 8.52933 6.5C14.3098 8.474 9.25189 12.1544 9.25189 12.1544H9.25111Z" stroke="#4B5563" stroke-width="1.5" stroke-miterlimit="10" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+
+                                <!-- Instagram-->
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 26 27" fill="none">
+                                        <rect x="0.5" y="1" width="25" height="25" rx="12.5" stroke="#9BA2AE"/>
+                                        <path d="M13 16.6111C13.8251 16.6111 14.6164 16.2833 15.1999 15.6999C15.7833 15.1164 16.1111 14.3251 16.1111 13.5C16.1111 12.6749 15.7833 11.8836 15.1999 11.3001C14.6164 10.7167 13.8251 10.3889 13 10.3889C12.1749 10.3889 11.3836 10.7167 10.8001 11.3001C10.2167 11.8836 9.88889 12.6749 9.88889 13.5C9.88889 14.3251 10.2167 15.1164 10.8001 15.6999C11.3836 16.2833 12.1749 16.6111 13 16.6111Z" stroke="#4B5563" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M6 16.6111V10.3889C6 9.35749 6.40972 8.36834 7.13903 7.63903C7.86834 6.90972 8.85749 6.5 9.88889 6.5H16.1111C17.1425 6.5 18.1317 6.90972 18.861 7.63903C19.5903 8.36834 20 9.35749 20 10.3889V16.6111C20 17.6425 19.5903 18.6317 18.861 19.361C18.1317 20.0903 17.1425 20.5 16.1111 20.5H9.88889C8.85749 20.5 7.86834 20.0903 7.13903 19.361C6.40972 18.6317 6 17.6425 6 16.6111Z" stroke="#4B5563" stroke-width="1.5"/>
+                                        <path d="M17.2778 9.22999L17.2855 9.22144" stroke="#4B5563" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+
+                                <!-- Website-->
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 26 27" fill="none">
+                                        <rect x="0.5" y="1" width="25" height="25" rx="12.5" stroke="#9BA2AE"/>
+                                        <path d="M16.052 14.9C16.108 14.438 16.15 13.976 16.15 13.5C16.15 13.024 16.108 12.562 16.052 12.1H18.418C18.53 12.548 18.6 13.017 18.6 13.5C18.6 13.983 18.53 14.452 18.418 14.9M14.813 18.792C15.233 18.015 15.555 17.175 15.779 16.3H17.844C17.1658 17.4678 16.0899 18.3524 14.813 18.792ZM14.638 14.9H11.362C11.292 14.438 11.25 13.976 11.25 13.5C11.25 13.024 11.292 12.555 11.362 12.1H14.638C14.701 12.555 14.75 13.024 14.75 13.5C14.75 13.976 14.701 14.438 14.638 14.9ZM13 19.072C12.419 18.232 11.95 17.301 11.663 16.3H14.337C14.05 17.301 13.581 18.232 13 19.072ZM10.2 10.7H8.156C8.82705 9.52892 9.90226 8.64287 11.18 8.208C10.76 8.985 10.445 9.825 10.2 10.7ZM8.156 16.3H10.2C10.445 17.175 10.76 18.015 11.18 18.792C9.90479 18.3526 8.831 17.4677 8.156 16.3ZM7.582 14.9C7.47 14.452 7.4 13.983 7.4 13.5C7.4 13.017 7.47 12.548 7.582 12.1H9.948C9.892 12.562 9.85 13.024 9.85 13.5C9.85 13.976 9.892 14.438 9.948 14.9M13 7.921C13.581 8.761 14.05 9.699 14.337 10.7H11.663C11.95 9.699 12.419 8.761 13 7.921ZM17.844 10.7H15.779C15.5596 9.83313 15.2352 8.99627 14.813 8.208C16.101 8.649 17.172 9.538 17.844 10.7ZM13 6.5C9.129 6.5 6 9.65 6 13.5C6 15.3565 6.7375 17.137 8.05025 18.4497C8.70026 19.0998 9.47194 19.6154 10.3212 19.9672C11.1705 20.3189 12.0807 20.5 13 20.5C14.8565 20.5 16.637 19.7625 17.9497 18.4497C19.2625 17.137 20 15.3565 20 13.5C20 12.5807 19.8189 11.6705 19.4672 10.8212C19.1154 9.97194 18.5998 9.20026 17.9497 8.55025C17.2997 7.90024 16.5281 7.38463 15.6788 7.03284C14.8295 6.68106 13.9193 6.5 13 6.5Z" fill="#4B5563"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Button Lihat Selengkapnya-->
+                        <div class="hidden">
+                            <a href="" class="max-w-fit px-4 py-2.5 flex gap-2 bg-sky-800 text-white items-center rounded hover:bg-sky-900">
+                                Lihat Selengkapnya
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M14.7413 9.375H3.125C2.95924 9.375 2.80027 9.44084 2.68306 9.55805C2.56585 9.67526 2.5 9.83424 2.5 10C2.5 10.1658 2.56585 10.3247 2.68306 10.4419C2.80027 10.5591 2.95924 10.625 3.125 10.625H14.7413L10.1825 15.1825C10.0651 15.2999 9.99921 15.459 9.99921 15.625C9.99921 15.791 10.0651 15.9501 10.1825 16.0675C10.2999 16.1849 10.459 16.2508 10.625 16.2508C10.791 16.2508 10.9501 16.1849 11.0675 16.0675L16.6925 10.4425C16.7507 10.3844 16.7969 10.3155 16.8284 10.2395C16.8599 10.1636 16.8761 10.0822 16.8761 10C16.8761 9.91779 16.8599 9.83639 16.8284 9.76045C16.7969 9.68452 16.7507 9.61555 16.6925 9.5575L11.0675 3.9325C10.9501 3.81514 10.791 3.74921 10.625 3.74921C10.459 3.74921 10.2999 3.81514 10.1825 3.9325C10.0651 4.04985 9.99921 4.20903 9.99921 4.375C9.99921 4.54097 10.0651 4.70014 10.1825 4.8175L14.7413 9.375Z" fill="white"/>
+                                </svg>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="order-first lg:order-last">
+                        <img class="w-auto h-96 object-contain" src="assets/Hero.png" alt="Hero Image">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Tentang Kami -->
+        <section class="pt-8 px-4 lg:px-16 xl:px-52" id="tentang-kami">
+            <div
+                data-aos="fade-down"
+                data-aos-delay="150"
+                data-aos-duration="500"
+                class="px-4 py-8 flex flex-wrap gap-8 justify-between items-center bg-gray-100 shadow rounded border border-gray-400 lg:px-8 md:flex-nowrap"
+            >
+                <div
+                    class=""
+                    data-aos="fade-up-right"
+                    data-aos-delay="500"
+                    data-aos-duration="1500"
+                >
+                    <h1 class="text-sky-800 text-base font-poppins font-semibold">
+                        #TENTANG KAMI
+                    </h1>
+                    <p class="text-sm text-gray-600">
+                        Kami membantu mewujudkan ide-ide brilian Anda menjadi solusi nyata – dari konsep hingga eksekusi, dengan teknologi terkini dan pendekatan yang mudah. IndoMicro: Partner Inovasi IoT, Robotik, & Pengembangan Website!
+                    </p>
+                </div>
+                <div
+                    class="flex gap-4 items-center"
+                    data-aos="fade-up-left"
+                    data-aos-delay="500"
+                    data-aos-duration="1500"
+                >
+                    <div class="px-8 py-2.5 flex flex-col justify-center items-center">
+                        <h1 class="flex items-center text-sky-800 text-xl font-poppins font-bold">
+                            100 <span class="text-sm">++</span>
+                        </h1>
+                        <p class="text-sm text-gray-600 font-poppins font-semibold">
+                            Pelanggan
+                        </p>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2" height="22" viewBox="0 0 2 22" fill="none">
+                        <path d="M1 0L0.999998 22" stroke="#9BA2AE"/>
+                    </svg>
+                    <div class="px-8 py-2.5 flex flex-col justify-center items-center">
+                        <h1 class="flex items-center text-sky-800 text-xl font-poppins font-bold">
+                            100 <span class="text-sm">++</span>
+                        </h1>
+                        <p class="text-sm text-gray-600 font-poppins font-semibold">
+                            Testimoni
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Komponen -->
+        <section class="px-4 lg:px-16 xl:px-52" id="komponen">
+            <div
+                class="px-4 py-8 space-y-8 justify-between items-center lg:px-8"
+            >
+                <div
+                    class=""
+                    data-aos="fade-down"
+                    data-aos-delay="150"
+                    data-aos-duration="500"
+                >
+                    <h1 class="text-sky-800 text-base font-poppins font-semibold">
+                        #KOMPONEN
+                    </h1>
+                    <p class="text-sm text-gray-600 w-fit">
+                        IndoMicro menyediakan berbagai perangkat IoT.
+                        Dari sensor Arduino sampai modul IoT premium.
+                    </p>
+                </div>
+
+                <div
+                    class="grid gap-4 md:grid md:grid-cols-2 md:gap-4 lg:grid lg:grid-cols-2 lg:gap-4 xl:grid-cols-3 xl:gap-6"
+                    data-aos="zoom-in"
+                    data-aos-delay="500"
+                    data-aos-duration="1500"
+                >
+                    <div
+                        class="border border-sky-400 rounded-lg shadow cursor-pointer hover:scale-105 hover:transition hover:duration-700 hover:ease-in-out"
+                    >
+                        <div class="bg-sky-200 rounded-t-lg">
+                            <img
+                                    src="assets/arduinoUno.png"
+                                    alt="Arduino Uno"
+                                    class="object-contain w-full h-64"
+                            >
+                        </div>
+                        <div class="px-8 py-2.5 flex justify-center bg-sky-800 text-white text-sm font-poppins font-semibold rounded-b-lg">
+                            UNO R3  atmega 328
+                        </div>
+                    </div>
+
+                    <div
+                            class="border border-sky-400 rounded-lg shadow cursor-pointer hover:scale-105 hover:transition hover:duration-700 hover:ease-in-out"
+                    >
+                        <div class="bg-sky-200 rounded-t-lg">
+                            <img
+                                    src="assets/RFID.png"
+                                    alt="Arduino Uno"
+                                    class="object-contain w-full h-64"
+                            >
+                        </div>
+                        <div class="px-8 py-2.5 flex justify-center bg-sky-800 text-white text-sm font-poppins font-semibold rounded-b-lg">
+                            RFID module rc522 for arduino
+                        </div>
+                    </div>
+
+                    <div
+                            class="border border-sky-400 rounded-lg shadow cursor-pointer hover:scale-105 hover:transition hover:duration-700 hover:ease-in-out"
+                    >
+                        <div class="bg-sky-200 rounded-t-lg">
+                            <img
+                                    src="assets/image-removebg-preview.png"
+                                    alt="Arduino Uno"
+                                    class="object-contain w-full h-64"
+                            >
+                        </div>
+                        <div class="px-8 py-2.5 flex justify-center bg-sky-800 text-white text-sm font-poppins font-semibold rounded-b-lg">
+                            L298n motor driver module arduino
+                        </div>
+                    </div>
+
+                    <div
+                            class="border border-sky-400 rounded-lg shadow cursor-pointer hover:scale-105 hover:transition hover:duration-700 hover:ease-in-out"
+                    >
+                        <div class="bg-sky-200 rounded-t-lg">
+                            <img
+                                    src="assets/Arduino%20Nano.png"
+                                    alt="Arduino Uno"
+                                    class="object-contain w-full h-64"
+                            >
+                        </div>
+                        <div class="px-8 py-2.5 flex justify-center bg-sky-800 text-white text-sm font-poppins font-semibold rounded-b-lg">
+                            Arduino Nano v3 Compatible...
+                        </div>
+                    </div>
+
+                    <div
+                            class="border border-sky-400 rounded-lg shadow cursor-pointer hover:scale-105 hover:transition hover:duration-700 hover:ease-in-out"
+                    >
+                        <div class="bg-sky-200 rounded-t-lg">
+                            <img
+                                    src="assets/robot%20arduino%204wd.png"
+                                    alt="Arduino Uno"
+                                    class="object-contain w-full h-64"
+                            >
+                        </div>
+                        <div class="px-8 py-2.5 flex justify-center bg-sky-800 text-white text-sm font-poppins font-semibold rounded-b-lg">
+                            robot arduino 4wd penghindar...
+                        </div>
+                    </div>
+
+                    <div
+                            class="border border-sky-400 rounded-lg shadow cursor-pointer hover:scale-105 hover:transition hover:duration-700 hover:ease-in-out"
+                    >
+                        <div class="bg-sky-200 rounded-t-lg">
+                            <img
+                                    src="assets/Arduino%20nano%20paket%20starter%20kit%20lengkap%20compatible%20v3.png"
+                                    alt="Arduino Uno"
+                                    class="object-contain w-full h-64"
+                            >
+                        </div>
+                        <div class="px-8 py-2.5 flex justify-center bg-sky-800 text-white text-sm font-poppins font-semibold rounded-b-lg">
+                            Arduino nano paket starter kit...
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Portofolio -->
+        <section class="px-4 lg:px-16 xl:px-52" id="portofolio">
+            <div
+                class="px-4 py-8 space-y-8 justify-between items-center lg:p-8"
+            >
+                <div
+                    class=""
+                    data-aos="fade-down"
+                    data-aos-delay="150"
+                    data-aos-duration="500"
+                >
+                    <h1 class="text-sky-800 text-base font-poppins font-semibold">
+                        #PORTOFOLIO
+                    </h1>
+                    <p class="text-sm text-gray-600 w-fit">
+                        Berikut beberapa portofolio IndoMicro
+                    </p>
+                </div>
+
+                <div
+                    class="carousel carousel-center bg-sky-200 rounded-box space-x-4 p-4"
+                    data-aos="zoom-in-down"
+                    data-aos-delay="500"
+                    data-aos-duration="1500"
+                >
+                    <div class="carousel-item">
+                        <img
+                            src="assets/projek1.jpeg"
+                            class="rounded-box w-auto h-96" />
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            src="assets/projek3.jpeg"
+                            class="rounded-box w-auto h-96" />
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            src="assets/projekweb.png"
+                            class="rounded-box w-auto h-96" />
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            src="assets/Hero.png"
+                            class="rounded-box w-auto h-96" />
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            src="assets/projek4.jpeg"
+                            class="rounded-box w-auto h-96" />
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            src="assets/PYC.png"
+                            class="rounded-box w-auto h-96" />
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            src="assets/projek5.jpeg"
+                            class="rounded-box w-auto h-96" />
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            src="assets/Login.png"
+                            class="rounded-box w-auto h-96" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimoni -->
+        <section class="px-4 lg:px-16 xl:px-52" id="testimoni">
+            <div
+                class="px-4 py-8 space-y-6 justify-between items-center bg-gray-100 shadow lg:p-8"
+                data-aos="fade-down"
+                data-aos-delay="150"
+                data-aos-duration="1500"
+            >
+                <div
+                    class=""
+                >
+                    <h1 class="text-sky-800 text-base font-poppins font-semibold">
+                        #TESTIMONI
+                    </h1>
+                    <p class="text-sm text-gray-600">
+                        Ini adalah testimoni dari berbagai pelanggan kita
+                    </p>
+                </div>
+
+                <div
+                    class="grid gap-4 justify-self-center md:grid md:grid-3 md:grid-cols-3 lg:gap-6 lg:grid"
+                    data-aos="zoom-out-down"
+                    data-aos-delay="500"
+                    data-aos-duration="1500"
+                >
+                    <div class="p-6 bg-white rounded-lg shadow border border-gray-300 flex flex-col justify-center items-center space-y-4">
+                        <p class="text-sm font-poppins font-light text-gray-800">Innovation drives progress in unexpected ways. Great design balances form and function. Success is built on consistent effort.</p>
+                        <h1 class="text-gray-800 font-semibold font-poppins">~ Ahmad ~</h1>
+                    </div>
+                    <div class="p-6 bg-white rounded-lg shadow border border-gray-300 flex flex-col justify-center items-center space-y-4">
+                        <p class="text-sm font-poppins font-light text-gray-800">Innovation drives progress in unexpected ways. Great design balances form and function. Success is built on consistent effort.</p>
+                        <h1 class="text-gray-800 font-semibold font-poppins">~ Ahmad ~</h1>
+                    </div>
+                    <div class="p-6 bg-white rounded-lg shadow border border-gray-300 flex flex-col justify-center items-center space-y-4">
+                        <p class="text-sm font-poppins font-light text-gray-800">Innovation drives progress in unexpected ways. Great design balances form and function. Success is built on consistent effort.</p>
+                        <h1 class="text-gray-800 font-semibold font-poppins">~ Ahmad ~</h1>
+                    </div>
+                    <div class="p-6 bg-white rounded-lg shadow border border-gray-300 flex flex-col justify-center items-center space-y-4">
+                        <p class="text-sm font-poppins font-light text-gray-800">Innovation drives progress in unexpected ways. Great design balances form and function. Success is built on consistent effort.</p>
+                        <h1 class="text-gray-800 font-semibold font-poppins">~ Ahmad ~</h1>
+                    </div>
+                    <div class="p-6 bg-white rounded-lg shadow border border-gray-300 flex flex-col justify-center items-center space-y-4">
+                        <p class="text-sm font-poppins font-light text-gray-800">Innovation drives progress in unexpected ways. Great design balances form and function. Success is built on consistent effort.</p>
+                        <h1 class="text-gray-800 font-semibold font-poppins">~ Ahmad ~</h1>
+                    </div>
+                    <div class="p-6 bg-white rounded-lg shadow border border-gray-300 flex flex-col justify-center items-center space-y-4">
+                        <p class="text-sm font-poppins font-light text-gray-800">Innovation drives progress in unexpected ways. Great design balances form and function. Success is built on consistent effort.</p>
+                        <h1 class="text-gray-800 font-semibold font-poppins">~ Ahmad ~</h1>
+                    </div>
+                    <div class="p-6 bg-white rounded-lg shadow border border-gray-300 flex flex-col justify-center items-center space-y-4">
+                        <p class="text-sm font-poppins font-light text-gray-800">Innovation drives progress in unexpected ways. Great design balances form and function. Success is built on consistent effort.</p>
+                        <h1 class="text-gray-800 font-semibold font-poppins">~ Ahmad ~</h1>
+                    </div>
+                    <div class="p-6 bg-white rounded-lg shadow border border-gray-300 flex flex-col justify-center items-center space-y-4">
+                        <p class="text-sm font-poppins font-light text-gray-800">Innovation drives progress in unexpected ways. Great design balances form and function. Success is built on consistent effort.</p>
+                        <h1 class="text-gray-800 font-semibold font-poppins">~ Ahmad ~</h1>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <div class="">
+            <div class="bg-sky-600">
+                <div class="px-4 lg:px-16 xl:px-52">
+                    <div class="px-4 py-8 space-y-2.5 lg:p-8">
+                        <div class="flex flex-wrap gap-x-4 items-center justify-center lg:flex-nowrap lg:gap-4">
+                            <a href="" class="py-1 text-gray-50 text-sm font-semibold">Beranda</a>
+                            <a href="#tentang-kami" class="py-1 text-gray-50 text-sm font-medium hover:text-gray-300">Tentang Kami</a>
+                            <a href="#komponen" class="py-1 text-gray-50 text-sm font-medium hover:text-gray-300">Komponen</a>
+                            <a href="#portofolio" class="py-1 text-gray-50 text-sm font-medium hover:text-gray-300">Portofolio</a>
+                            <a href="#testimoni" class="py-1 text-gray-50 text-sm font-medium hover:text-gray-300">Testimoni</a>
+                        </div>
+                        <div class="text-white justify-center flex text-center lg:text-left">
+                            <h1 class="text-xl font-poppins font-semibold">Robotika Cerdas, Website Tangguh, <span class="font-salsa">IndoMicro</span> Solusinya!</h1>
+                        </div>
+                        <div>
+                            <a href="" class="flex gap-2 items-center justify-center text-white font-poppins text-sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.83331 5.99994C3.83354 5.10548 4.09082 4.22993 4.57452 3.47754C5.05822 2.72515 5.74796 2.12761 6.56161 1.75609C7.37526 1.38456 8.27855 1.25469 9.16391 1.38195C10.0493 1.5092 10.8794 1.88822 11.5555 2.47387C12.2316 3.05951 12.7251 3.82712 12.9773 4.68529C13.2295 5.54345 13.2298 6.45603 12.9781 7.31434C12.7264 8.17266 12.2333 8.94056 11.5576 9.52661C10.8818 10.1127 10.0519 10.4922 9.16665 10.6199V13.9999C9.16665 14.1768 9.09641 14.3463 8.97138 14.4713C8.84636 14.5964 8.67679 14.6666 8.49998 14.6666C8.32317 14.6666 8.1536 14.5964 8.02858 14.4713C7.90355 14.3463 7.83331 14.1768 7.83331 13.9999V10.6199C6.72245 10.4596 5.70658 9.90427 4.97192 9.05574C4.23726 8.20721 3.83303 7.12232 3.83331 5.99994ZM7.79331 5.29328C7.98067 5.10569 8.23485 5.00018 8.49998 4.99994C8.67679 4.99994 8.84636 4.92971 8.97138 4.80468C9.09641 4.67966 9.16665 4.51009 9.16665 4.33328C9.16665 4.15647 9.09641 3.9869 8.97138 3.86187C8.84636 3.73685 8.67679 3.66661 8.49998 3.66661C7.88114 3.66661 7.28765 3.91244 6.85006 4.35003C6.41248 4.78761 6.16665 5.38111 6.16665 5.99994C6.16665 6.17676 6.23688 6.34632 6.36191 6.47135C6.48693 6.59637 6.6565 6.66661 6.83331 6.66661C7.01012 6.66661 7.17969 6.59637 7.30472 6.47135C7.42974 6.34632 7.49998 6.17676 7.49998 5.99994C7.49998 5.73461 7.60531 5.47994 7.79331 5.29328Z" fill="white"/>
+                                </svg>
+                                Jl. Lunjuk Palembang Sumatera Selatan
+                            </a>
+                        </div>
+                        <div class="flex gap-2 items-center justify-center">
+                            <!-- Phone-->
+                            <a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 26 27" fill="none">
+                                    <rect x="0.5" y="1" width="25" height="25" rx="12.5" stroke="#fff"/>
+                                    <path d="M9.25111 12.1544L14.3098 17.1789C14.8519 16.5512 18.2842 12.8716 20 17.8976C20 17.8976 19.8196 20.5 16.1158 20.5C13.497 20.5 10.7872 17.3593 8.89022 15.5642C7.26467 14.0382 6 12.0642 6 10.2691C6 6.59022 8.52933 6.5 8.52933 6.5C14.3098 8.474 9.25189 12.1544 9.25189 12.1544H9.25111Z" stroke="#fff" stroke-width="1.5" stroke-miterlimit="10" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+
+                            <!-- Instagram-->
+                            <a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 26 27" fill="none">
+                                    <rect x="0.5" y="1" width="25" height="25" rx="12.5" stroke="#fff"/>
+                                    <path d="M13 16.6111C13.8251 16.6111 14.6164 16.2833 15.1999 15.6999C15.7833 15.1164 16.1111 14.3251 16.1111 13.5C16.1111 12.6749 15.7833 11.8836 15.1999 11.3001C14.6164 10.7167 13.8251 10.3889 13 10.3889C12.1749 10.3889 11.3836 10.7167 10.8001 11.3001C10.2167 11.8836 9.88889 12.6749 9.88889 13.5C9.88889 14.3251 10.2167 15.1164 10.8001 15.6999C11.3836 16.2833 12.1749 16.6111 13 16.6111Z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M6 16.6111V10.3889C6 9.35749 6.40972 8.36834 7.13903 7.63903C7.86834 6.90972 8.85749 6.5 9.88889 6.5H16.1111C17.1425 6.5 18.1317 6.90972 18.861 7.63903C19.5903 8.36834 20 9.35749 20 10.3889V16.6111C20 17.6425 19.5903 18.6317 18.861 19.361C18.1317 20.0903 17.1425 20.5 16.1111 20.5H9.88889C8.85749 20.5 7.86834 20.0903 7.13903 19.361C6.40972 18.6317 6 17.6425 6 16.6111Z" stroke="#fff" stroke-width="1.5"/>
+                                    <path d="M17.2778 9.22999L17.2855 9.22144" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+
+                            <!-- Website-->
+                            <a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 26 27" fill="none">
+                                    <rect x="0.5" y="1" width="25" height="25" rx="12.5" stroke="#fff"/>
+                                    <path d="M16.052 14.9C16.108 14.438 16.15 13.976 16.15 13.5C16.15 13.024 16.108 12.562 16.052 12.1H18.418C18.53 12.548 18.6 13.017 18.6 13.5C18.6 13.983 18.53 14.452 18.418 14.9M14.813 18.792C15.233 18.015 15.555 17.175 15.779 16.3H17.844C17.1658 17.4678 16.0899 18.3524 14.813 18.792ZM14.638 14.9H11.362C11.292 14.438 11.25 13.976 11.25 13.5C11.25 13.024 11.292 12.555 11.362 12.1H14.638C14.701 12.555 14.75 13.024 14.75 13.5C14.75 13.976 14.701 14.438 14.638 14.9ZM13 19.072C12.419 18.232 11.95 17.301 11.663 16.3H14.337C14.05 17.301 13.581 18.232 13 19.072ZM10.2 10.7H8.156C8.82705 9.52892 9.90226 8.64287 11.18 8.208C10.76 8.985 10.445 9.825 10.2 10.7ZM8.156 16.3H10.2C10.445 17.175 10.76 18.015 11.18 18.792C9.90479 18.3526 8.831 17.4677 8.156 16.3ZM7.582 14.9C7.47 14.452 7.4 13.983 7.4 13.5C7.4 13.017 7.47 12.548 7.582 12.1H9.948C9.892 12.562 9.85 13.024 9.85 13.5C9.85 13.976 9.892 14.438 9.948 14.9M13 7.921C13.581 8.761 14.05 9.699 14.337 10.7H11.663C11.95 9.699 12.419 8.761 13 7.921ZM17.844 10.7H15.779C15.5596 9.83313 15.2352 8.99627 14.813 8.208C16.101 8.649 17.172 9.538 17.844 10.7ZM13 6.5C9.129 6.5 6 9.65 6 13.5C6 15.3565 6.7375 17.137 8.05025 18.4497C8.70026 19.0998 9.47194 19.6154 10.3212 19.9672C11.1705 20.3189 12.0807 20.5 13 20.5C14.8565 20.5 16.637 19.7625 17.9497 18.4497C19.2625 17.137 20 15.3565 20 13.5C20 12.5807 19.8189 11.6705 19.4672 10.8212C19.1154 9.97194 18.5998 9.20026 17.9497 8.55025C17.2997 7.90024 16.5281 7.38463 15.6788 7.03284C14.8295 6.68106 13.9193 6.5 13 6.5Z" fill="#fff"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="bg-sky-800">
+                <div class="px-4 lg:px-52">
+                    <h2 class="py-2.5 flex items-center justify-center gap-2 text-white text-sm">2025
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M6.71998 7.23992C6.75331 7.01992 6.82665 6.82659 6.91998 6.66659C7.11998 6.29325 7.45998 6.09992 7.91998 6.09325C8.21998 6.09325 8.49331 6.22659 8.68665 6.41992C8.87331 6.62659 8.99998 6.91325 8.99998 7.19992H10.2C10.1866 6.88659 10.1266 6.59992 9.99998 6.33325C9.89998 6.07992 9.74665 5.85325 9.54665 5.66659C8.57998 4.77325 6.78665 4.89992 5.96665 5.91325C5.10665 7.02659 5.08665 8.97325 5.95998 10.0866C6.76665 11.0799 8.53331 11.2199 9.49331 10.3333C9.69998 10.1666 9.86665 9.95992 9.99998 9.71992C10.1066 9.47992 10.18 9.22659 10.1866 8.95325H8.99998C8.99998 9.09325 8.95331 9.21992 8.89331 9.33325C8.83331 9.45992 8.75331 9.55992 8.66665 9.64659C8.44665 9.81992 8.18665 9.91325 7.90665 9.91325C7.66665 9.90659 7.46665 9.85992 7.31331 9.75992C7.1402 9.66311 7.00242 9.51366 6.91998 9.33325C6.58665 8.73325 6.63998 7.89992 6.71998 7.23992ZM7.99998 1.33325C4.33331 1.33325 1.33331 4.33325 1.33331 7.99992C1.68665 16.8466 14.3333 16.8399 14.6666 7.99992C14.6666 4.33325 11.6666 1.33325 7.99998 1.33325ZM7.99998 13.3333C5.05998 13.3333 2.66665 10.9399 2.66665 7.99992C2.95998 0.926585 13.04 0.926585 13.3333 7.99992C13.3333 10.9399 10.94 13.3333 7.99998 13.3333Z" fill="white"/>
+                        </svg>
+                        <span class="font-salsa">IndoMicro.</span>
+                        All rights reserved.
+                    </h2>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="public/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
